@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Saloni ❤️</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    overflow:hidden;
+    text-align:center;
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    padding:40px 20px;
+    color:white;
+}
+
+h1{
+    font-size:40px;
+}
+
+.message{
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:20px;
+    margin-top:20px;
+    backdrop-filter:blur(5px);
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4f81;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.heart{
+    position:absolute;
+    color:white;
+    font-size:20px;
+    animation:float 8s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+#hiddenMessage{
+    display:none;
+    margin-top:20px;
+    font-size:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Hey Saloni ❤️</h1>
+
+<div class="message">
+<p>
+Pta h tu mujhse naraz h... 🥺
+</p>
+
+<p>
+Main perfect nhi hu aur maine gltiyan bhi ki hain...
+Par dil se bol raha hu ki jo bhi hua uske liye mujhe sach me afsos hai. ❤️
+</p>
+
+<p>
+Teri smile aaj bhi meri favourite cheez hai. 😊
+</p>
+
+<p>
+Google ke paas sab answers honge...
+Par meri favourite notification tu hi hai. 💖
+</p>
+
+<p>
+Agar possible ho to ek chance de dena baat karne ka... 🌸
+</p>
+
+<h2>Sorry Saloni ❤️</h2>
+
+<p>
+Main bas itna chahta hu ki tu khush rahe...
+Aur agar meri wajah se kabhi hurt hui ho,
+to dil se Sorry. 🥺
+</p>
+
+<h3>— Maddy ❤️</h3>
+
+<button onclick="showMessage()">Ek Smile To Banti Hai 😊</button>
+
+<div id="hiddenMessage">
+🌸 Yay! Ye smile mujhe mil gayi 😍❤️
+</div>
+<div id="hiddenMessage">
+💌 I Love You Saloni ❤️<br><br>
+Chahe tu gussa ho,
+par meri feelings sach hain. 🥺❤️<br><br>
+— Maddy ❤️
+</div>
+</div>
+
+</div>
+
+<script>
+function showMessage(){
+document.getElementById("hiddenMessage").style.display="block";
+}
+
+for(let i=0;i<30;i++){
+let heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"%";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+heart.style.fontSize=(15+Math.random()*25)+"px";
+document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
